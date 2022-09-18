@@ -1,24 +1,40 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Poppins:wght@400;700&display=swap");
+
+* {
 	margin: 0;
-	height: 80vh;
-	display: grid;
-	background-color: #ddddde;
-	place-items: center;
+	padding: 0;
 	font-family: Poppins;
 }
 
-.container h1 {
+body {
+	display: grid;
+	place-items: center;
+	width: 100wv;
+	height: 80vh;
+	padding: 4vmin;
+	background-color: #ddddde;
+}
+
+h1 {
+	margin-bottom: 5vmin;
 	text-align: center;
-	margin-bottom: 80px;
+	font-size: 6vmin;
 	color: rgba(0, 0, 0, 0.6);
 }
 
 .box {
+	width: fit-content;
+	height: fit-content;
+	padding: 5vmin 11vmin 4vmin 5vmin;
+	border-radius: 7vmin;
 	background-color: #1d1e22;
-	padding: 20px 40px;
-	border-radius: 30px;
-	box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: 0.8vmin 0.8vmin 3vmin 0.8vmin rgba(0, 0, 0, 0.4);
 	color: #f9f9f9;
+}
+
+.box h2 {
+	margin-bottom: 4vmin;
+	font-size: 5vmin;
 }
 
 ol {
@@ -28,23 +44,23 @@ ol {
 
 li {
 	counter-increment: op-order-list;
-	margin-bottom: 10px;
+	margin: 2vmin;
+	font-size: 4vmin;
 	font-weight: 400;
 	transition: transform 1.2s ease;
 }
 
 li::before {
 	content: counter(op-order-list);
-	width: 30px;
-	height: 30px;
-	margin-right: 10px;
-	padding-left: 8px;
-	padding-top: 4px;
-	/* 	border-radius: 24% 76% 39% 61% / 0% 70% 30% 100%; */
+	width: 6vmin;
+	height: 6vmin;
+	margin-right: 2.2vmin;
+	padding-left: 1.6vmin;
+	padding-top: 0.6vmin;
 	border-radius: 50% 50% 0% 50%;
 	background: linear-gradient(135deg, #c3ec52 0%, #0ba29d 100%);
 	color: #1d1e22;
-	font-size: 20px;
+	font-size: 4.5vmin;
 	text-align: center;
 	display: inline-block;
 	box-sizing: border-box;
@@ -52,8 +68,8 @@ li::before {
 }
 
 li:hover {
-	border-radius: 10px;
-	transform: translatex(20px);
+	border-radius: 4vmin;
+	transform: translatex(6vmin);
 	font-weight: 700;
 }
 
@@ -63,7 +79,7 @@ li:hover::before {
 		rgba(245, 177, 97, 1) 0%,
 		rgba(236, 54, 110, 1) 100%
 	);
-	padding-left: 4px;
+	padding-left: 1vmin;
 	border-radius: 0% 50% 50% 50%;
 	color: #1d1e22;
 }
@@ -72,8 +88,9 @@ footer {
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	padding: 10px;
+	padding: 2vmin;
 	font-weight: 600;
+	font-size: 3vmin;
 	color: #1c1c1e;
 }
 
